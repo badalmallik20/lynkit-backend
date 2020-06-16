@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Lynkit",
+        "description": "Lynkit api documentation for user",
+        "version": "1.0"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "host": "localhost:3000",
+    "basePath": "",
+    "paths": {
+        
+        "/login": {
+            "post": {
+                "x-swagger-router-controller": "middleware-name1",
+                "operationId": "login",
+                "tags": [
+                    "User"
+                ],
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "email is required",
+                        "required": true,
+                        "type": "string",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "password is required",
+                        "required": true,
+                        "type": "string",
+                        "value": ""
+                    }
+                   
+                ],
+                "responses": {}
+            }
+        },
+        "/UserRegistration": {
+            "post": {
+                "x-swagger-router-controller": "middleware-name1",
+                "operationId": "UserRegistration",
+                "tags": [
+                    "User"
+                ],
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": "name is required",
+                        "required": true,
+                        "type": "string",
+                        "value": ""
+                    },
+                    {
+                        "name": "mobileNumber",
+                        "in": "formData",
+                        "description": "mobile number is required",
+                        "required": true,
+                        "type": "number",
+                        "value": ""
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "email is required",
+                        "required": true,
+                        "type": "string",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "password is required",
+                        "required": true,
+                        "type": "string",
+                        "value": ""
+                    }
+                   
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
